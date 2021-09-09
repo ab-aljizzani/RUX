@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/css/all.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="/src/tailwind.css" rel="stylesheet" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="relative md:flex min-h-screen ">
+        <!-- mobile menu bar -->
+        <div class=" bg-black flex justify-between md:hidden">
+            <!--logo-->
+            <a href="#" class="block p-4 text-white font-bold">ROCH STODIO</a>
+
+            <i class="p-4 fas fa-2x fa-bars text-white focus:bg-gray-300 cursor-pointer" id="burger"></i>
+
+        </div>
+
+        <!-- sidbar-->
+        <div id="sidebar" class="bg-black text-blue-100 w-64 space-y-6 px-2 py-7 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:-translate-x-0 transition duration-300 ease-in-out">
+            <!--logo-->
+            <a href="#" class=" flex items-center space-x-2 px-4 text-blue-100 hover:text-secodary transition duration-500 transform">
+                <i class="pt-1  fa-2x fas fa-camera-retro  "></i>
+                <span class=" font-extrabold text-2xl">ROCH STODIO</span>
+            </a>
+            <!--nav-->
+            <nav id="menu">
+                <a href="#" class="block py-2.5 px-4 hover:bg-secodary hover:text-primary rounded transition duration-500 transform">Home</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-secodary hover:text-primary rounded transition duration-500 transform">About</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-secodary hover:text-primary rounded transition duration-500 transform">portfolio</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-secodary hover:text-primary rounded transition duration-500 transform">Services</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-secodary hover:text-primary rounded transition duration-500 transform">team</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-secodary hover:text-primary rounded transition duration-500 transform">clients</a>
+            </nav>
+        </div>
+
+
+        <!--content-->
+        <div class=" container">
+            <section class="py-32 mt-10 bg-white " id="services">
+                <div class="px-2 mx-auto sm:w-3/4 lg:w-5/12">
+                    <h1 class="text-3xl text-center text-primary">Explore Our Services</h1>
+                    <p class="text-center text-gray-400 ">Check Out Our Services We Provide A sevral Types of Services And You Can Order it Now !</p>
+                </div>
+                <div class="container grid max-w-screen-lg grid-cols-1 gap-16 mt-16 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="flex flex-col rounded-md shadow-md bg-gray-50">
+                        <div class="flex flex-col items-center p-6 ">
+                            <img src="./Img/Services/s3.jpg">
+                            <h3 class="mt-5 mb-5 text-lg text-primary ">Programming</h3>
+                            <p class="mb-2 font-light text-gray-400"> Get Your Web Site In One Click !
+                            </p>
+                        </div>
+                        <hr class="border-b border-gray-100" />
+                        <div class="flex p-6 ">
+                            <a href="#" id="btn2" class="flex-1 h-full px-4 py-3 text-xs font-semibold tracking-wider text-center text-white uppercase transition duration-500 bg-gray-500 border-gray-500 cursor-pointer md:border-2 hover:bg-white hover:text-primary ">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col rounded-md shadow-md bg-gray-50">
+                        <div class="flex flex-col items-center p-6 ">
+                            <img src="./Img/Services/s3.jpg">
+                            <h3 class="mt-5 mb-5 text-lg text-primary ">Programming</h3>
+                            <p class="mb-2 font-light text-gray-400"> Get Your Web Site In One Click !
+                            </p>
+                        </div>
+                        <hr class="border-b border-gray-100" />
+                        <div class="flex p-6 ">
+                            <a href="#" id="btn2" class="flex-1 h-full px-4 py-3 text-xs font-semibold tracking-wider text-center text-white uppercase transition duration-500 bg-gray-500 border-gray-500 cursor-pointer md:border-2 hover:bg-white hover:text-primary ">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col rounded-md shadow-md bg-gray-50">
+                        <div class="flex flex-col items-center p-6 ">
+                            <img src="./Img/Services/s3.jpg">
+                            <h3 class="mt-5 mb-5 text-lg text-primary ">Programming</h3>
+                            <p class="mb-2 font-light text-gray-400"> Get Your Web Site In One Click !
+                            </p>
+                        </div>
+                        <hr class="border-b border-gray-100" />
+                        <div class="flex p-6 ">
+                            <a href="#" id="btn2" class="flex-1 h-full px-4 py-3 text-xs font-semibold tracking-wider text-center text-white uppercase transition duration-500 bg-gray-500 border-gray-500 cursor-pointer md:border-2 hover:bg-white hover:text-primary ">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <script src="./admin_code.js"></script>
+</body>
+
+</html>
