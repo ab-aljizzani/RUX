@@ -18,11 +18,12 @@ module.exports = {
                     xl: "1124px",
                     "2xl": "1124px",
                 },
+
             },
         },
     },
     variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [require('@tailwindcss/aspect-ratio')],
 }

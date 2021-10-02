@@ -7,6 +7,8 @@ const footer = document.querySelector('#footer');
 const sidebar = document.querySelector('#sidebar');
 const sidebarmenu = document.querySelector('#sidebarmenu');
 const sp = document.querySelector("#cl2");
+const nav = document.querySelector("#nav");
+const imgDiv = document.querySelector("#imgDiv");
 
 services.querySelectorAll('a').forEach((item) => {
     item.addEventListener("click", (event) => {
@@ -78,17 +80,23 @@ img.querySelectorAll('img').forEach((item) => {
 
         document.getElementById("modolImg").src = item.src;
         port_modal.style.display = "block";
-
+        nav.classList.add('hidden');
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             port_modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
+            nav.classList.remove('hidden');
+        };
+        imgDiv.onclick = function() {
+                port_modal.style.display = "none";
+                nav.classList.remove('hidden');
+            }
+            // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == port_modal) {
                 port_modal.style.display = "none";
+                nav.classList.remove('hidden');
             }
+
         }
 
     });

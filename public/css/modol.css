@@ -65,6 +65,8 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    top:0px;
+    right:10px;
 }
 
 .close:hover,
